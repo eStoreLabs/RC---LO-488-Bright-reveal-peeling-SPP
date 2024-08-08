@@ -162,7 +162,7 @@
             <div class="es-tab1--item">
               <p>
                 <strong>PO 3 TYGODNIACH</strong>
-                REDUKCJA WSZYTKICH <br />
+                REDUKCJA WSZYSTKICH <br />
                 RODZAJÓW PRZEBARWIEŃ
               </p>
             </div>
@@ -179,7 +179,7 @@
               <p>
                 <strong
                   >[25% KWASÓW <br />
-                  [AHA + BHA + PHA]]</strong
+                  [AHA + BHA + PHA]</strong
                 >
                 POMAGAJĄ ZWĘZIĆ PORY <br />
                 i ZREDUKOWAĆ <br />NIEDOSKONAŁOŚCI
@@ -189,7 +189,7 @@
 
           <div class="es-tab-content es-tab-content--3">
             <p class="es-tab__main--title">
-              odpowiednie nawet <strong>dla skóry wrażliwej</strong>
+              odpowiedni nawet <strong>dla skóry wrażliwej</strong>
             </p>
             <p class="es-tab__main--title">
               <strong> 90% KOBIET POTWIERDZA,</strong>
@@ -253,6 +253,7 @@
                     <div class="es-slider__slide1__rightCtn">
                       <div class="es-slider__slide1__img--bottom">
                         <img
+                          class="es-slider__slide1--img"
                           src="./3600524119928/images/wizaz_ocena.png"
                           alt="wizaż PL: 4.9 na 5 gwiazdek, na 442 recenzje"
                         />
@@ -426,6 +427,29 @@
                 <div class="swiper-slide es-slider2__slide">
                   <div class="es-cross__item">
                     <div class="es-cross__img">
+                      <img src="./3600524119928/images/cross-4.png" />
+                    </div>
+                    <div class="es-cross__info">
+                      <p class="es-cross__series-name">Bright reveal</p>
+                      <p class="es-cross__prod-name">serum</p>
+                      <p class="es-cross__prod-desc">
+                        Redukuje wszystkie rodzaje <br />przebarwień (w tym:
+                        potrądzikowe,<br />
+                        posłoneczne, związane z wiekiem)
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.superpharm.pl/loreal-bright-reveal-49651-30-ml-188349.html"
+                    target="_blank"
+                    class="es-cross__link"
+                    >Kup teraz</a
+                  >
+                </div>
+
+                <div class="swiper-slide es-slider2__slide">
+                  <div class="es-cross__item">
+                    <div class="es-cross__img">
                       <img src="./3600524119928/images/cross-2.png" />
                     </div>
                     <div class="es-cross__info">
@@ -465,29 +489,6 @@
                   </div>
                   <a
                     href="https://www.superpharm.pl/loreal-bright-reveal-spf50-49649-50-ml-188351.html"
-                    target="_blank"
-                    class="es-cross__link"
-                    >Kup teraz</a
-                  >
-                </div>
-
-                <div class="swiper-slide es-slider2__slide">
-                  <div class="es-cross__item">
-                    <div class="es-cross__img">
-                      <img src="./3600524119928/images/cross-4.png" />
-                    </div>
-                    <div class="es-cross__info">
-                      <p class="es-cross__series-name">Bright reveal</p>
-                      <p class="es-cross__prod-name">serum</p>
-                      <p class="es-cross__prod-desc">
-                        Redukuje wszystkie rodzaje <br />przebarwień (w tym:
-                        potrądzikowe,<br />
-                        posłoneczne, związane z wiekiem)
-                      </p>
-                    </div>
-                  </div>
-                  <a
-                    href="https://www.superpharm.pl/loreal-bright-reveal-49651-30-ml-188349.html"
                     target="_blank"
                     class="es-cross__link"
                     >Kup teraz</a
@@ -592,6 +593,32 @@
           dots: true,
           adaptiveHeight: true,
         });
+
+        function updateBackground(index) {
+          var $wrapper = $('.es-slider__wrapper');
+
+          if (index === 1) {
+            $wrapper.removeClass('background-1').addClass('background-2');
+          } else {
+            $wrapper.removeClass('background-2').addClass('background-1');
+          }
+        }
+
+        function delayedUpdateBackground(index) {
+          setTimeout(function () {
+            updateBackground(index);
+          }, 10);
+        }
+
+        var initialIndex = $('.es-slick-carousel').slick('slickCurrentSlide');
+        updateBackground(initialIndex);
+
+        $('.es-slick-carousel').on(
+          'afterChange',
+          function (event, slick, currentSlide) {
+            delayedUpdateBackground(currentSlide);
+          },
+        );
       });
 
       $(document).ready(function () {
