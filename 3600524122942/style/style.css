@@ -746,8 +746,21 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: 3%;
+  justify-content: center;
   padding: 16px 8px;
   gap: 16px;
+}
+
+#es-loreal.es-loreal .es-slider__slide1__text {
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+}
+#es-loreal.es-loreal .es-slider__slide1__text--purple {
+  color: purple;
 }
 
 #es-loreal.es-loreal .es-slider__slide1__title {
@@ -1308,8 +1321,6 @@
   #es-loreal.es-loreal .es-slider__slide1--img {
     display: block;
     max-width: 100%;
-    margin-left: 0%;
-    margin-top: 25%;
   }
 
   #es-loreal.es-loreal .es-kv__photo--desktop {
