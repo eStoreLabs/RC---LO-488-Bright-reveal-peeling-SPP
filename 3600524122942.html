@@ -257,12 +257,6 @@
                           src="./3600524122942/images/wizaz_ocena.png"
                           alt="wizaż PL: 4.9 na 5 gwiazdek, na 442 recenzje"
                         />
-                        <p class="es-slider__slide1__text">
-                          na
-                          <span class="es-slider__slide1__text--purple"
-                            >445 recenzji<sup>4</sup>
-                          </span>
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -589,55 +583,55 @@
     ></script>
     <script src="./3600524122942/scripts/slick-slider.js"></script>
     <script>
-      // require(['jquery', 'slick'], function ($) {
-      $(document).ready(function () {
-        $('.es-slick-carousel').slick({
-          infinite: true,
-          slidesToShow: 1,
-          prevArrow: '.slick-button-prev',
-          nextArrow: '.slick-button-next',
-          dots: true,
-          adaptiveHeight: true,
-        });
+      require(['jquery', 'slick'], function ($) {
+        $(document).ready(function () {
+          $('.es-slick-carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            prevArrow: '.slick-button-prev',
+            nextArrow: '.slick-button-next',
+            dots: true,
+            adaptiveHeight: true,
+          });
 
-        function updateBackground(index) {
-          var $wrapper = $('.es-slider__wrapper');
+          function updateBackground(index) {
+            var $wrapper = $('.es-slider__wrapper');
 
-          if (index === 1) {
-            $wrapper.removeClass('background-1').addClass('background-2');
-          } else {
-            $wrapper.removeClass('background-2').addClass('background-1');
+            if (index === 1) {
+              $wrapper.removeClass('background-1').addClass('background-2');
+            } else {
+              $wrapper.removeClass('background-2').addClass('background-1');
+            }
           }
-        }
 
-        function delayedUpdateBackground(index) {
-          setTimeout(function () {
-            updateBackground(index);
-          }, 10);
-        }
+          function delayedUpdateBackground(index) {
+            setTimeout(function () {
+              updateBackground(index);
+            }, 10);
+          }
 
-        var initialIndex = $('.es-slick-carousel').slick('slickCurrentSlide');
-        updateBackground(initialIndex);
+          var initialIndex = $('.es-slick-carousel').slick('slickCurrentSlide');
+          updateBackground(initialIndex);
 
-        $('.es-slick-carousel').on(
-          'afterChange',
-          function (event, slick, currentSlide) {
-            delayedUpdateBackground(currentSlide);
-          },
-        );
-      });
+          $('.es-slick-carousel').on(
+            'afterChange',
+            function (event, slick, currentSlide) {
+              delayedUpdateBackground(currentSlide);
+            },
+          );
+        });
 
-      $(document).ready(function () {
-        $('.es-slick-carousel-2').slick({
-          infinite: true,
-          slidesToShow: 1,
-          prevArrow: '.slick-button-2-prev',
-          nextArrow: '.slick-button-2-next',
-          dots: true,
-          adaptiveHeight: true,
+        $(document).ready(function () {
+          $('.es-slick-carousel-2').slick({
+            infinite: true,
+            slidesToShow: 1,
+            prevArrow: '.slick-button-2-prev',
+            nextArrow: '.slick-button-2-next',
+            dots: true,
+            adaptiveHeight: true,
+          });
         });
       });
-      // });
     </script>
   </body>
 </html>
