@@ -51,6 +51,14 @@
   position: relative;
 }
 
+#es-loreal.es-loreal .es-beads-1 {
+  display: none;
+}
+
+#es-loreal.es-loreal .es-beads-2 {
+  display: none;
+}
+
 #es-loreal.es-loreal .es-kv__logo {
   position: relative;
   margin: 0 auto;
@@ -1863,7 +1871,7 @@
 
   /* dodatkowy kod*/
 
-  .es-beads {
+  #es-loreal.es-loreal .es-beads {
     position: absolute;
     bottom: -25%;
     right: -4%;
@@ -1873,19 +1881,19 @@
     animation: pulse 5s infinite;
   }
 
-  .es-beads-1 {
+  #es-loreal.es-loreal .es-beads-1 {
     display: none !important;
   }
 
-  .es-beads-2 {
+  #es-loreal.es-loreal .es-beads-2 {
     display: none !important;
   }
 
-  .es-slider__wrapper.background-1 .es-beads-1 {
+  #es-loreal.es-loreal .es-slider__wrapper.background-1 .es-beads-1 {
     display: block !important;
   }
 
-  .es-slider__wrapper.background-2 .es-beads-2 {
+  #es-loreal.es-loreal .es-slider__wrapper.background-2 .es-beads-2 {
     display: block !important;
   }
   /* koniec */
