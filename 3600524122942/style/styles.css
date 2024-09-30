@@ -11,12 +11,31 @@
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1.2;
-  max-width: 715px;
+  max-width: 728px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
   color: var(--color-black);
   background: var(--color-light);
+}
+
+#es-loreal.es-loreal .slick-button-prev {
+  position: absolute;
+  bottom: -11%;
+  left: 25%;
+  cursor: pointer;
+}
+#es-loreal.es-loreal .slick-button-next {
+  position: absolute;
+  bottom: -11%;
+  right: 25%;
+  cursor: pointer;
+}
+
+#es-loreal.es-loreal .fa-angle-left--2::before,
+#es-loreal.es-loreal .fa-angle-right--2::before {
+  color: #00afb6;
+  font-size: 32px;
 }
 
 #es-loreal.es-loreal * {
@@ -788,6 +807,8 @@
 
 #es-loreal.es-loreal .es-slider__slide1__imgCtn img {
   scale: 1.05;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #es-loreal.es-loreal .es-slider__slide1__rightCtn {
@@ -1346,7 +1367,7 @@
   text-transform: none;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1200px) {
   /* **************** */
   /* BENEFITS STYLES  */
   /*     CSS TABS     */
@@ -1378,9 +1399,9 @@
   #es-loreal.es-loreal .es-use__single {
     width: 49%;
   }
-}
 
-@media screen and (min-width: 768px) {
+  /* 500px */
+
   #es-loreal.es-loreal .es-results__BA-group--number {
     font-size: 50px;
   }
@@ -1793,9 +1814,9 @@
     -ms-transform: none;
     transform: none;
   }
-}
 
-@media screen and (min-width: 860px) {
+  /* 768px */
+
   #es-loreal.es-loreal .es-routine__steps {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1901,9 +1922,9 @@
   #es-loreal.es-loreal .es-use__desc {
     font-size: 16px;
   }
-}
 
-@media screen and (min-width: 996px) {
+  /* 860px */
+
   #es-loreal.es-loreal .es-results__bg {
     min-height: 750px;
   }
@@ -2136,6 +2157,19 @@
 
   #es-loreal.es-loreal .es-video__left {
     min-width: 270px;
+  }
+
+  #es-loreal.es-loreal .slick-button-prev {
+    position: absolute;
+    bottom: -11%;
+    left: 37%;
+    cursor: pointer;
+  }
+  #es-loreal.es-loreal .slick-button-next {
+    position: absolute;
+    bottom: -11%;
+    right: 37%;
+    cursor: pointer;
   }
 }
 
@@ -2380,28 +2414,17 @@
     transform: translateX(0);
   }
 }
-#es-loreal.es-loreal .slick-button-prev {
-  position: absolute;
-  bottom: -11%;
-  left: 37%;
-  cursor: pointer;
-}
-#es-loreal.es-loreal .slick-button-next {
-  position: absolute;
-  bottom: -11%;
-  right: 37%;
-  cursor: pointer;
-}
 #es-loreal.es-loreal .slick-button-2-prev {
   position: absolute;
   top: 35%;
-  left: -3%;
+  left: 0;
   cursor: pointer;
+  color: #00afb6;
 }
 #es-loreal.es-loreal .slick-button-2-next {
   position: absolute;
   top: 35%;
-  right: -3%;
+  right: 0;
   cursor: pointer;
 }
 #es-loreal.es-loreal .slick-pagination-2 {
