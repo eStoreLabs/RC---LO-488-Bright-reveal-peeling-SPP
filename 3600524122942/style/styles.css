@@ -284,6 +284,7 @@
   top: 0;
   left: 0;
   min-height: 575px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 #es-loreal.es-loreal .es-results {
@@ -591,6 +592,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 #es-loreal.es-loreal
@@ -705,6 +707,14 @@
   color: #ffffff;
   font-weight: 900;
   background: rgb(0, 123, 122);
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 123, 122, 1) 0%,
+    rgba(79, 185, 181, 1) 22%,
+    rgba(32, 133, 139, 1) 50%,
+    rgba(80, 185, 179, 1) 72%,
+    rgba(47, 109, 110, 1) 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -714,14 +724,6 @@
     color-stop(50%, rgba(32, 133, 139, 1)),
     color-stop(72%, rgba(80, 185, 179, 1)),
     to(rgba(47, 109, 110, 1))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(0, 123, 122, 1) 0%,
-    rgba(79, 185, 181, 1) 22%,
-    rgba(32, 133, 139, 1) 50%,
-    rgba(80, 185, 179, 1) 72%,
-    rgba(47, 109, 110, 1) 100%
   );
   background: linear-gradient(
     90deg,
@@ -789,7 +791,7 @@
   -ms-flex-pack: distribute;
   justify-content: space-around;
   gap: 8px;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: none;
 }
 
@@ -816,6 +818,8 @@
   -ms-flex-align: center;
   align-items: center;
   margin-left: 3%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 16px 8px;
   gap: 16px;
@@ -978,6 +982,7 @@
   left: 0;
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
   min-height: 935px;
 }
@@ -1137,6 +1142,14 @@
   color: #ffffff;
   font-weight: 900;
   background: rgb(0, 123, 122);
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 123, 122, 1) 0%,
+    rgba(79, 185, 181, 1) 22%,
+    rgba(32, 133, 139, 1) 50%,
+    rgba(80, 185, 179, 1) 72%,
+    rgba(47, 109, 110, 1) 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -1146,14 +1159,6 @@
     color-stop(50%, rgba(32, 133, 139, 1)),
     color-stop(72%, rgba(80, 185, 179, 1)),
     to(rgba(47, 109, 110, 1))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(0, 123, 122, 1) 0%,
-    rgba(79, 185, 181, 1) 22%,
-    rgba(32, 133, 139, 1) 50%,
-    rgba(80, 185, 179, 1) 72%,
-    rgba(47, 109, 110, 1) 100%
   );
   background: linear-gradient(
     90deg,
@@ -1291,6 +1296,14 @@
   color: #ffffff;
   font-weight: 900;
   background: rgb(0, 123, 122);
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 123, 122, 1) 0%,
+    rgba(79, 185, 181, 1) 22%,
+    rgba(32, 133, 139, 1) 50%,
+    rgba(80, 185, 179, 1) 72%,
+    rgba(47, 109, 110, 1) 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -1300,14 +1313,6 @@
     color-stop(50%, rgba(32, 133, 139, 1)),
     color-stop(72%, rgba(80, 185, 179, 1)),
     to(rgba(47, 109, 110, 1))
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(0, 123, 122, 1) 0%,
-    rgba(79, 185, 181, 1) 22%,
-    rgba(32, 133, 139, 1) 50%,
-    rgba(80, 185, 179, 1) 72%,
-    rgba(47, 109, 110, 1) 100%
   );
   background: linear-gradient(
     90deg,
@@ -1448,6 +1453,7 @@
     left: 0;
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 
@@ -1712,6 +1718,7 @@
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover;
+      min-height: 275px;
     }
   }
 
@@ -1730,12 +1737,12 @@
 
   #es-loreal.es-loreal .es-slider .swiper-button-next,
   #es-loreal.es-loreal .es-slider .swiper-container-rtl .swiper-button-prev {
-    right: 37%;
+    right: 35%;
   }
 
   #es-loreal.es-loreal .es-slider .swiper-button-prev,
   #es-loreal.es-loreal .es-slider .swiper-container-rtl .swiper-button-next {
-    left: 37%;
+    left: 35%;
   }
 
   #es-loreal.es-loreal .es-slider__slide--2 {
@@ -1892,6 +1899,7 @@
     width: 180px;
     height: 180px;
     z-index: 2;
+    -webkit-animation: pulse 5s infinite;
     animation: pulse 5s infinite;
   }
 
@@ -2155,13 +2163,13 @@
   #es-loreal.es-loreal .slick-button-prev {
     position: absolute;
     bottom: -11%;
-    left: 37%;
+    left: 35%;
     cursor: pointer;
   }
   #es-loreal.es-loreal .slick-button-next {
     position: absolute;
     bottom: -11%;
-    right: 37%;
+    right: 35%;
     cursor: pointer;
   }
 }
@@ -2424,17 +2432,23 @@
   position: absolute;
   bottom: 15px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
 }
 #es-loreal.es-loreal .slick-dots {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0 4px;
   padding: 0;
   margin: 0;
   bottom: -10%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
